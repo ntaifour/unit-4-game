@@ -29,39 +29,74 @@
             <!-- Need to figure our how to center cards in boxes -->
             <div class="row">
                 <div class="col-sm-3 text-center" style="background-color: green; height: 250px">
-                    <div id="jwick" class="skincard" value="140">
+                    <div id="jwick" class="skinshell" value="140">
                         <h2>John Wick</h2>
                         <img src="assets/images/johnwickskin.jpg" alt="John Wick Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
                 <div class="col-sm-3 text-center" style="background-color: red; height: 250px">
-                    <div id="skull" class="skincard" value="120">
+                    <div id="skull" class="skinshell" value="120">
                         <h2>Skull Trooper</h2>
                         <img src="assets/images/skulltrooperskin.jpg" alt="Skull Trooper Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
                 <div class="col-sm-3 text-center" style="background-color: blue; height: 250px">
-                    <div id="tri" class="skincard" value="180">
+                    <div id="tri" class="skinshell" value="180">
                             <h2>Tricera Ops</h2>
                         <img src="assets/images/triskin.jpg" alt="Tricera Ops Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
                 <div class="col-sm-3 text-center" style="background-color: gainsboro; height: 250px">
-                    <div id="tomato" class="skincard" value="160">
+                    <div id="tomato" class="skinshell" value="160">
                         <h2>Tomato Head</h2>
                         <img src="assets/images/tomatoheadskin.jpg" alt="Tomato Head Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 <!-- Create a container to move user's selection  -->
+    <div class = "container-fluid userselection">
+        <div class="row">
+            <!-- align middle does not work  -->
+            <div class="col-sm-12 text-left align-middle" style="background-color: lightgreen">
+                <p>Your hero:</p>
+            </div>
+        </div>
+        <!-- Place user skin selection here-->
+        <div class="row">
+            <div class="col-sm-12 text-center" style="background-color: purple; height: 250px">
+                <!-- User's skin will be hosted here -->
+                <div id = "userskin"></div>
+            </div>
+        </div>
+    </div>
 
-<!-- Create a container to move the enemies  -->
-<!-- Will be a new container that replaces the skin options container -->
+<!-- Create a container to move the opponents  -->
+    <div class = "container-fluid remainingskins">
+        <div class="row">
+            <!-- align middle does not work  -->
+            <div class="col-sm-12 text-left align-middle" style="background-color: black">
+                <p>Opponents:</p>
+            </div>
+        </div>
+        <!-- Place user skin selection here-->
+        <div class="row">
+            <div class="col-sm-4 text-center" style="background-color: red; height: 250px">
+                <!-- Opponents skins will be hosted here -->
+                <div id = "opponents"></div>
+            </div>
+        </div>
+    </div>
 
-<!-- Create a container to move the user's focus enemy  -->
+<!-- Create a container to move the user's focus opponent  -->
+
+<!-- Attack button  -->
+
+<!-- Reset button  -->
+
+</div>
+
 </body>
 
 </html>
