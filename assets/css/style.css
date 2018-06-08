@@ -7,7 +7,7 @@ p{
     font-size: 24px
 }
 
-.skincard{
+.skinshell{
     border: solid;
 	border-width: 2px;
 	border-color: black;
@@ -29,3 +29,8 @@ p{
 h2{
     font-family: 'Luckiest Guy', cursive;
 }
+
+/* body {
+    font-family: 'Luckiest Guy', cursive;
+    background-image: url("..assets/images/Battle-Bus.jpg");
+  } */
