@@ -11,42 +11,42 @@
 </head>
 
 <body>
-    <div class="container" style="background-color: azure">
+    <div class="container">
         <header>
             <div class="container-fluid title">
-                <h1>Fortnite RPG</h1><br>   
+                <h1 style="color: white">Fortnite RPG</h1><br>   
             </div>
         </header>
 <!-- Create container to host all the skin options  -->
         <div class = "container-fluid skinoptions">
             <div class="row">
                 <!-- align middle does not work  -->
-                <div class="col-sm-12 text-left align-middle" style="background-color: pink">
-                    <p>Choose your skin!</p>
+                <div class="col-sm-12 text-left align-middle">
+                    <p class="sectionheader">Choose your skin!</p>
                 </div>
             </div>    
             <!-- Placing skin cards in boxes -->
             <!-- Need to figure our how to center cards in boxes -->
             <div class="row">
-                <div class="col-sm-3 text-center" style="background-color: green; height: 250px">
+                <div class="col-sm-3 text-center">
                     <div id="jwick" class="skinshell" value="180">
                         <h3>John Wick</h3>
                         <img src="assets/images/johnwickskin.jpg" alt="John Wick Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
-                <div class="col-sm-3 text-center" style="background-color: red; height: 250px">
+                <div class="col-sm-3 text-center" style="height: 250px">
                     <div id="skull" class="skinshell" value="120">
                         <h3>Skull Trooper</h3>
                         <img src="assets/images/skulltrooperskin.jpg" alt="Skull Trooper Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
-                <div class="col-sm-3 text-center" style="background-color: blue; height: 250px">
+                <div class="col-sm-3 text-center" style="height: 250px">
                     <div id="tri" class="skinshell" value="140">
                             <h3>Tricera Ops</h3>
                         <img src="assets/images/triskin.jpg" alt="Tricera Ops Skin" style="width:180px; height: 180px;">
                     </div>
                 </div>
-                <div class="col-sm-3 text-center" style="background-color: gainsboro; height: 250px">
+                <div class="col-sm-3 text-center" style="height: 250px">
                     <div id="tomato" class="skinshell" value="160">
                         <h3>Tomato Head</h3 >
                         <img src="assets/images/tomatoheadskin.jpg" alt="Tomato Head Skin" style="width:180px; height: 180px;">
@@ -55,73 +55,75 @@
             </div>
         </div>
 
+<div class="row top-buffer"></div>
 <!-- Create a container to host the enemy squad  -->
 <div class = "container-fluid enemysquad">
         <div class="row">
-            <!-- align middle does not work  -->
-            <div class="col-sm-12 text-left align-middle" style="background-color: black">
-                <p style="color: white">Enemy Squad:</p>
+            <div class="col-sm-12 text-left">
+                <p class="sectionheader">Enemy Squad:</p>
             </div>
         </div>
         <!-- Place user skin selection here-->
         <div class="row">
-            <div class="col-sm-4 text-center" style="background-color: red; height: 250px">
+            <div class="col-sm-4 text-center" style="height: 250px">
                 <!-- Enemy skin will be hosted here -->
                 <div id = "enemy1"></div>
             </div>
-            <div class="col-sm-4 text-center" style="background-color: yellow; height: 250px">
+            <div class="col-sm-4 text-center" style="height: 250px">
                 <!-- Enemy skin will be hosted here -->
                 <div id = "enemy2"></div>
             </div>
-            <div class="col-sm-4 text-center" style="background-color: orange; height: 250px">
+            <div class="col-sm-4 text-center" style="height: 250px">
                 <!-- Enemy skin will be hosted here -->
                 <div id = "enemy3"></div>
             </div>
         </div>
     </div>
 
+<div class="row top-buffer"></div>
+<div class="row top-buffer"></div>
 <!-- Create container that holds user's skin and opponent -->
 <!-- Create a container to host the enemy squad  -->
     <div class = "container-fluid battleground">
         <div class="row">
-            <!-- align middle does not work  -->
-            <div class="col-sm-12 text-left align-middle" style="background-color: hotpink">
-                <p>Battleground</p>
+            <div class="col-sm-12 text-left">
+                <p class="sectionheader">Battleground</p>
             </div>
         </div>
+        <div class="row top-buffer"></div>
         <!-- Row split in two; left side for user, right side for enemy-->
         <div class="row">
-            <div class="col-sm-12 text-center" style="background-color: black;">
+            <div class="col-sm-12 text-center">
                 <!-- Host user's selection  -->
                 <div class="row">
-                    <div class="col-sm-5 text-left" style="background-color: lightgreen">
-                        <p>Your skin:</p>
+                    <div class="col-sm-5 text-left">
+                        <p class="sectionheader">Your skin:</p>
                     </div>
                 </div>    
                 <!-- Place user skin selection here-->
                 <div class="row">
-                    <div class="col-sm-5 text-center" style="background-color: purple; height: 250px">
+                    <div class="col-sm-5 text-center" style="height: 250px">
                         <!-- User's skin will be hosted here -->
                         <div id = "userskin"></div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-5 text-center" style="background-color: white; height: 80px">
-                            <h5 style="text-align: center">Head-to-Head</h5>
-                            <button id = "attack">Attack</button>
+                    <div class="col-sm-5 text-center" style="height: 80px">
+                        <p class="attack">Head-to-Head</p>
+                        <button id = "attack">Attack</button>
                     </div>
                 </div>
                 
                 <!-- Move the user's focus opponent  --> 
                 <div class="row">
-                    <div class="col-sm-5 text-left align-right" style="background-color: lightblue">
-                        <p>Selected Opponent:</p>
+                    <div class="col-sm-5 text-left align-right">
+                        <p class="sectionheader">Selected Opponent:</p>
                     </div>
                 </div>
                 <!-- Place opponent skin selection here-->
                 <div class="row">
-                    <div class="col-sm-5 text-center" style="background-color: orange; height: 250px">
+                    <div class="col-sm-5 text-center" style="height: 250px">
                         <!-- Opponents skins will be hosted here -->
                         <div id = "opponent"></div>
                     </div>
