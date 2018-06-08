@@ -30,7 +30,10 @@ h2{
     font-family: 'Luckiest Guy', cursive;
 }
 
-/* body {
-    font-family: 'Luckiest Guy', cursive;
-    background-image: url("..assets/images/Battle-Bus.jpg");
-  } */
+body{
+    /* font-family: 'Luckiest Guy', cursive; */
+    background-image: url("https://i.imgur.com/CK1AOH6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
